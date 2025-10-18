@@ -9,9 +9,7 @@ function GenerateButton(){
     return(
         <>
         <div>
-            <button type="button" className="m-4 flex justify-center px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 
-            text-white font-semibold rounded-lg shadow-md hover:from-blue-600
-            hover:to-indigo-700 hover:shadow-lg transition duration-300 ease-in-out">Generate</button>
+            <button type="button" className="bg-gray-300 border-4 border-t-white border-l-white border-r-gray-800 border-b-gray-800 py-2 px-8 font-bold text-sm tracking-wide hover:bg-gray-400 active:border-t-gray-800 active:border-l-gray-800 active:border-r-white active:border-b-white">Generate</button>
         </div>
 
         </>
