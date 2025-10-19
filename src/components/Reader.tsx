@@ -1,13 +1,24 @@
-import { useState } from 'react'
-
+import { useState, useRef } from 'react'
 
 
 function ReadComprehension(){
 
+    const divRef = useRef<HTMLDivElement>(null)
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const containerRef = useRef<HTMLDivElement>(null);
+
+
+    function handleDrag(e: React.DragEvent){
+        if (!divRef.current) return;
+
+        e.dataTransfer.setDragImage(divRef.current, 0, 0);
+    }
+
     return(
     <>  
-        <div className='w-150 bg-gray-200 border-4 border-t-gray-50 border-l-gray-50 border-r-gray-800 border-b-gray-800 shadow-lg'>
-            <div className='bg-blue-200 border-2 p-1'>
+
+        <div ref={divRef} draggable onDragStart={handleDrag} className='w-150 bg-gray-200 border-4 border-t-gray-50 border-l-gray-50 border-r-gray-800 border-b-gray-800 shadow-lg'>
+            <div  className='bg-blue-200 border-2 p-1'>
                 <div className = "flex justify-end">
                     <button className='w-5 h-5 bg-gray-200 border-2 border-t-white border-l-white border-r-gray-800 border-b-gray-800 flex items-center justify-center text-xs font-bold hover:bg-gray-300'>X</button>
                     <button className='w-5 h-5 bg-gray-200 border-2 border-t-white border-l-white border-r-gray-800 border-b-gray-800 flex items-center justify-center text-xs font-bold hover:bg-gray-300'>□</button>
@@ -21,7 +32,6 @@ function ReadComprehension(){
 
 
         </div>
-
     </>
 
     )
