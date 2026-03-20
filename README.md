@@ -3,6 +3,13 @@
 
 A Windows XP-styled German language flashcard app built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
+### Windows-XP Styled Components
+
+![FlashCard XP Screenshot](./src/assets/screenshot2.png)
+
+![FlashCard XP Screenshot](./src/assets/screenshot3.png)
+
+
 ---
 
 ## Features
