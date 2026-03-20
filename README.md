@@ -1,5 +1,5 @@
 # FlashCard XP
-![FlashCard XP Screenshot](.src/assets/screenshot.png)
+![FlashCard XP Screenshot](.src/assets/screenshot.jpeg)
 
 A Windows XP-styled German language flashcard app built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
